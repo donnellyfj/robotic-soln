@@ -21,6 +21,7 @@ if(BUILD_TESTING)
     "msg/Num.msg"
     "msg/Sphere.msg"
     "srv/AddThreeInts.srv"
+    "srv/Sensor3DOF.srv"
     DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
   )
 
