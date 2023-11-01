@@ -20,12 +20,16 @@ sock.connect(server_address)
 
 while True:
     # Request 10 samples from the sensor
+    print("Requesting samples...")
     message_string = str(number_of_samples)
     message = message_string.encode()
     sock.sendall(message)
+    print("Message sent")
 
     byte_data = sock.recv(10000)
     data =  np.frombuffer(byte_data)
+    print("Data received!")
+    print(data)
 # Clean up the connection
 print('closing socket')
 sock.close()
