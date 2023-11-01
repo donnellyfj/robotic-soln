@@ -15,7 +15,7 @@
 import rclpy
 from rclpy.node import Node
 
-from custom_interfaces.msg import Num
+from geometry_msgs.msg import Point
 
 
 class MinimalSubscriber(Node):
@@ -23,14 +23,14 @@ class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
-            Num,
+            Point,
             'topic',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.num)
+        self.get_logger().info('I heard: "%f, %f, %f"' % (msg.x, msg.y, msg.z))
 
 
 def main(args=None):
