@@ -1,0 +1,331 @@
+[0.000000] (-) TimerEvent: {}
+[0.000229] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000266] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict()}
+[0.000293] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('custom_interfaces', '/home/user/robotic-soln/install/custom_interfaces')])}
+[0.000321] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.082441] (-) TimerEvent: {}
+[0.111221] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.124367] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.125331] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/robotic-soln/build/custom_interfaces', '--', '-j1', '-l1'], 'cwd': '/home/user/robotic-soln/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1446'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ROS:@/tmp/.ICE-unix/1411,unix/ROS:/tmp/.ICE-unix/1411'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fdc6aef8_65c0_4f4e_98cc_9cb87216f299'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OKP3D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/robotic-soln/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.182558] (-) TimerEvent: {}
+[0.283112] (-) TimerEvent: {}
+[0.383803] (-) TimerEvent: {}
+[0.407818] (custom_interfaces) StdoutLine: {'line': b'[  2%] Built target custom_interfaces__cpp\n'}
+[0.452394] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.484150] (-) TimerEvent: {}
+[0.520278] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.553156] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_c\x1b[0m\n'}
+[0.574873] (custom_interfaces) StdoutLine: {'line': b'[ 23%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.584425] (-) TimerEvent: {}
+[0.603062] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.648454] (custom_interfaces) StdoutLine: {'line': b'[ 34%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.680549] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.692078] (-) TimerEvent: {}
+[0.702257] (custom_interfaces) StdoutLine: {'line': b'[ 44%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.739866] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.762766] (custom_interfaces) StdoutLine: {'line': b'[ 55%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.790665] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[0.802522] (-) TimerEvent: {}
+[0.808464] (custom_interfaces) StdoutLine: {'line': b'[ 65%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.848101] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.872866] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.907246] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces\n'}
+[0.907608] (-) TimerEvent: {}
+[0.986445] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[1.010857] (-) TimerEvent: {}
+[1.111530] (-) TimerEvent: {}
+[1.221799] (-) TimerEvent: {}
+[1.333904] (-) TimerEvent: {}
+[1.415743] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.417130] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[1.418441] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[1.419724] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[1.428619] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[1.430228] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[1.441539] (-) TimerEvent: {}
+[1.472130] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[1.523621] (custom_interfaces) StdoutLine: {'line': b'[ 78%] Built target custom_interfaces__py\n'}
+[1.544230] (-) TimerEvent: {}
+[1.549043] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_py\x1b[0m\n'}
+[1.587295] (custom_interfaces) StdoutLine: {'line': b'[ 87%] Built target custom_interfaces__rosidl_generator_py\n'}
+[1.610043] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.648595] (custom_interfaces) StdoutLine: {'line': b'[ 91%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.648811] (-) TimerEvent: {}
+[1.681624] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.710321] (custom_interfaces) StdoutLine: {'line': b'[ 95%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.736518] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.750887] (-) TimerEvent: {}
+[1.757090] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.772153] (custom_interfaces) CommandEnded: {'returncode': 0}
+[1.860564] (-) TimerEvent: {}
+[1.969955] (-) TimerEvent: {}
+[2.001271] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[2.022153] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/robotic-soln/build/custom_interfaces'], 'cwd': '/home/user/robotic-soln/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1446'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ROS:@/tmp/.ICE-unix/1411,unix/ROS:/tmp/.ICE-unix/1411'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fdc6aef8_65c0_4f4e_98cc_9cb87216f299'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OKP3D2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/robotic-soln/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.043977] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.047987] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[2.049188] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.049888] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.050563] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.051580] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__functions.h\n'}
+[2.051805] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__functions.c\n'}
+[2.051995] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__struct.h\n'}
+[2.052181] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__type_support.h\n'}
+[2.052360] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/add_three_ints.h\n'}
+[2.052563] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.053422] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.054687] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__functions.h\n'}
+[2.055331] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__struct.h\n'}
+[2.055577] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__functions.h\n'}
+[2.055944] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__functions.c\n'}
+[2.056287] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__type_support.h\n'}
+[2.056489] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__type_support.h\n'}
+[2.056671] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__functions.c\n'}
+[2.056850] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__struct.h\n'}
+[2.057029] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.057217] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/num.h\n'}
+[2.057391] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/sphere.h\n'}
+[2.058846] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[2.059092] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[2.061657] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[2.062038] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.062241] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.062449] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.062648] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[2.062819] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.063007] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.063206] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h\n'}
+[2.063384] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[2.063565] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.065495] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.065871] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.066064] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.066247] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.066444] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__traits.hpp\n'}
+[2.066623] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__builder.hpp\n'}
+[2.066800] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__struct.hpp\n'}
+[2.066974] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/add_three_ints.hpp\n'}
+[2.067137] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.067333] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.067535] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__struct.hpp\n'}
+[2.067712] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__traits.hpp\n'}
+[2.067887] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__builder.hpp\n'}
+[2.068059] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__traits.hpp\n'}
+[2.068230] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__struct.hpp\n'}
+[2.068403] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__builder.hpp\n'}
+[2.068580] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/num.hpp\n'}
+[2.068751] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/sphere.hpp\n'}
+[2.068958] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.069163] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.069790] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.070268] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.070407] (-) TimerEvent: {}
+[2.070759] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps\n'}
+[2.071070] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.071338] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.071852] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.072121] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.072336] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[2.072641] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.075464] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.075880] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.076089] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.076276] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.076502] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[2.076684] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[2.076851] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.077031] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.077226] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_c.h\n'}
+[2.077404] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__type_support.c\n'}
+[2.077597] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__type_support.c\n'}
+[2.077775] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[2.077957] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.079918] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.081478] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[2.081841] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.082035] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[2.082368] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[2.082671] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.082868] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__type_support.cpp\n'}
+[2.083039] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.083221] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[2.083415] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__type_support.cpp\n'}
+[2.083594] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.083769] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.083943] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__type_support.cpp\n'}
+[2.086479] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.088961] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.089691] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[2.089953] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[2.092188] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[2.093509] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.093847] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.094136] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.094423] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.094755] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[2.095461] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.095653] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.095838] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.096028] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[2.096198] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv\n'}
+[2.103819] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_add_three_ints_s.c\n'}
+[2.104335] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py\n'}
+[2.104576] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_add_three_ints.py\n'}
+[2.104843] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.105213] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.105403] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.105583] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.105754] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[2.107328] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_sphere.py\n'}
+[2.107566] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_sphere_s.c\n'}
+[2.107760] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[2.107978] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_num_s.c\n'}
+[2.108172] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_num.py\n'}
+[2.159735] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[2.159983] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[2.160083] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv'...\n"}
+[2.167074] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.169493] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.170769] (-) TimerEvent: {}
+[2.172062] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.173800] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.174666] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Num.idl\n'}
+[2.174915] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Sphere.idl\n'}
+[2.175600] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts.idl\n'}
+[2.175840] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Num.msg\n'}
+[2.176061] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Sphere.msg\n'}
+[2.176493] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts.srv\n'}
+[2.176742] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts_Request.msg\n'}
+[2.176982] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts_Response.msg\n'}
+[2.177868] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[2.178599] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[2.178870] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[2.179108] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.179330] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[2.179551] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[2.179777] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[2.180005] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[2.180218] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[2.180436] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[2.180649] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[2.182256] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[2.186229] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.186771] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.188823] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.189149] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.190350] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.191553] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.191790] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.192979] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.193211] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.194372] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.194603] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.195767] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.196002] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.203781] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.204227] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.209338] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.209741] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.210023] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.210264] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.210502] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.210738] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.210977] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.211209] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.211450] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.211679] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[2.211865] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[2.212085] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[2.220569] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.280347] (-) TimerEvent: {}
+[2.389432] (-) TimerEvent: {}
+[2.499405] (-) TimerEvent: {}
+[2.610032] (-) TimerEvent: {}
+[2.718874] (-) TimerEvent: {}
+[2.734030] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[2.735393] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[2.829387] (-) TimerEvent: {}
+[2.933846] (-) TimerEvent: {}
+[3.038684] (-) TimerEvent: {}
+[3.147908] (-) TimerEvent: {}
+[3.248362] (-) TimerEvent: {}
+[3.358358] (-) TimerEvent: {}
+[3.467870] (-) TimerEvent: {}
+[3.577146] (-) TimerEvent: {}
+[3.687166] (-) TimerEvent: {}
+[3.787570] (-) TimerEvent: {}
+[3.888551] (-) TimerEvent: {}
+[3.994271] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/user/robotic-soln/build/py_srvcli/build', 'install', '--record', '/home/user/robotic-soln/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/user/robotic-soln/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'user', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/user', 'OLDPWD': '/home/user', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1446', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'user', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ROS:@/tmp/.ICE-unix/1411,unix/ROS:/tmp/.ICE-unix/1411', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fdc6aef8_65c0_4f4e_98cc_9cb87216f299', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OKP3D2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.132', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/user/robotic-soln/build/py_srvcli', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/user/robotic-soln/build/py_srvcli/prefix_override:/home/user/robotic-soln/install/py_srvcli/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.994941] (-) TimerEvent: {}
+[4.096246] (-) TimerEvent: {}
+[4.206282] (-) TimerEvent: {}
+[4.316036] (-) TimerEvent: {}
+[4.393095] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[4.394225] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[4.402107] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[4.403187] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[4.403750] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[4.404286] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[4.407062] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[4.409057] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[4.410004] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[4.410306] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[4.412740] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[4.413637] (py_srvcli) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.413975] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.415478] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[4.417262] (-) TimerEvent: {}
+[4.419868] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[4.422114] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.423947] (py_srvcli) StdoutLine: {'line': b"removing '/home/user/robotic-soln/install/py_srvcli/lib/python3.10/site-packages/py_srvcli-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.424448] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/user/robotic-soln/install/py_srvcli/lib/python3.10/site-packages/py_srvcli-0.0.0-py3.10.egg-info\n'}
+[4.426469] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[4.453599] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/user/robotic-soln/install/py_srvcli/lib/py_srvcli\n'}
+[4.465699] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/user/robotic-soln/install/py_srvcli/lib/py_srvcli\n'}
+[4.468073] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/user/robotic-soln/build/py_srvcli/install.log'\n"}
+[4.515310] (py_srvcli) CommandEnded: {'returncode': 0}
+[4.525501] (-) TimerEvent: {}
+[4.587461] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[4.588477] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[4.629074] (-) TimerEvent: {}
+[4.735344] (-) TimerEvent: {}
+[4.844338] (-) TimerEvent: {}
+[4.954166] (-) TimerEvent: {}
+[5.064016] (-) TimerEvent: {}
+[5.174270] (-) TimerEvent: {}
+[5.276476] (-) TimerEvent: {}
+[5.383316] (-) TimerEvent: {}
+[5.493325] (-) TimerEvent: {}
+[5.602634] (-) TimerEvent: {}
+[5.712461] (-) TimerEvent: {}
+[5.784347] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/user/robotic-soln/build/py_pubsub/build', 'install', '--record', '/home/user/robotic-soln/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/user/robotic-soln/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'user', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/user/robotic-soln/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/user', 'OLDPWD': '/home/user', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1446', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'user', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ROS:@/tmp/.ICE-unix/1411,unix/ROS:/tmp/.ICE-unix/1411', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fdc6aef8_65c0_4f4e_98cc_9cb87216f299', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OKP3D2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.132', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/user/robotic-soln/install/custom_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/user/robotic-soln/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/user/robotic-soln/build/py_pubsub/prefix_override:/home/user/robotic-soln/install/py_pubsub/lib/python3.10/site-packages:/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/user/robotic-soln/install/custom_interfaces'}, 'shell': False}
+[5.821876] (-) TimerEvent: {}
+[5.931395] (-) TimerEvent: {}
+[6.040905] (-) TimerEvent: {}
+[6.150552] (-) TimerEvent: {}
+[6.167498] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[6.168665] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[6.175888] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[6.177195] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[6.178687] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[6.179616] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[6.188898] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.191866] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[6.192768] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[6.193132] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[6.197098] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[6.197550] (py_pubsub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.197741] (py_pubsub) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.198390] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[6.202237] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[6.204548] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.206545] (py_pubsub) StdoutLine: {'line': b"removing '/home/user/robotic-soln/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.207136] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/user/robotic-soln/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info\n'}
+[6.215428] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[6.245202] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/user/robotic-soln/install/py_pubsub/lib/py_pubsub\n'}
+[6.247516] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/user/robotic-soln/install/py_pubsub/lib/py_pubsub\n'}
+[6.248368] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/user/robotic-soln/build/py_pubsub/install.log'\n"}
+[6.250796] (-) TimerEvent: {}
+[6.281066] (py_pubsub) CommandEnded: {'returncode': 0}
+[6.361824] (-) TimerEvent: {}
+[6.366485] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[6.367659] (-) EventReactorShutdown: {}

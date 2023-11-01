@@ -1,0 +1,303 @@
+[0.161s] Invoking command in '/home/user/robotic-soln/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/robotic-soln/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/user/robotic-soln/install/custom_interfaces
+[0.843s] -- The C compiler identification is GNU 11.4.0
+[1.129s] -- The CXX compiler identification is GNU 11.4.0
+[1.167s] -- Detecting C compiler ABI info
+[1.364s] -- Detecting C compiler ABI info - done
+[1.395s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.404s] -- Detecting C compile features
+[1.407s] -- Detecting C compile features - done
+[1.418s] -- Detecting CXX compiler ABI info
+[1.596s] -- Detecting CXX compiler ABI info - done
+[1.623s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.625s] -- Detecting CXX compile features
+[1.626s] -- Detecting CXX compile features - done
+[1.668s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.977s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.210s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.233s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.416s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.443s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.488s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.545s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.600s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.907s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.592s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.422s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.697s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.742s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.748s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.792s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.793s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.794s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.795s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.832s] -- Found PythonExtra: .so  
+[5.016s] -- Added test 'lint_cmake' to check CMake code style
+[5.022s] -- Added test 'xmllint' to check XML markup files
+[5.051s] -- Configuring done
+[5.190s] -- Generating done
+[5.206s] -- Build files have been written to: /home/user/robotic-soln/build/custom_interfaces
+[5.228s] Invoked command in '/home/user/robotic-soln/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/robotic-soln/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/user/robotic-soln/install/custom_interfaces
+[5.228s] Invoking command in '/home/user/robotic-soln/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/robotic-soln/build/custom_interfaces -- -j1 -l1
+[5.388s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.805s] [  2%] Built target custom_interfaces__cpp
+[6.854s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.992s] [  6%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/num__type_support.cpp.o[0m
+[9.261s] [  8%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/sphere__type_support.cpp.o[0m
+[10.058s] [ 10%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[10.907s] [ 12%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_cpp.so[0m
+[11.112s] [ 12%] Built target custom_interfaces__rosidl_typesupport_cpp
+[11.147s] [ 14%] [34m[1mGenerating C code for ROS interfaces[0m
+[12.574s] [ 17%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/num__functions.c.o[0m
+[12.764s] [ 19%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/sphere__functions.c.o[0m
+[12.951s] [ 21%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/add_three_ints__functions.c.o[0m
+[13.131s] [ 23%] [32m[1mLinking C shared library libcustom_interfaces__rosidl_generator_c.so[0m
+[13.285s] [ 23%] Built target custom_interfaces__rosidl_generator_c
+[13.334s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.203s] [ 27%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/num__type_support_c.cpp.o[0m
+[14.889s] [ 29%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/sphere__type_support_c.cpp.o[0m
+[15.413s] [ 31%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/add_three_ints__type_support_c.cpp.o[0m
+[15.963s] [ 34%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[16.114s] [ 34%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[16.153s] [ 36%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[16.797s] [ 38%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o[0m
+[17.379s] [ 40%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/sphere__type_support.cpp.o[0m
+[17.931s] [ 42%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/add_three_ints__type_support.cpp.o[0m
+[18.551s] [ 44%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[18.690s] [ 44%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[18.708s] [ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[19.319s] [ 48%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/num__type_support.c.o[0m
+[19.438s] [ 51%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/sphere__type_support.c.o[0m
+[19.565s] [ 53%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/add_three_ints__type_support.c.o[0m
+[19.692s] [ 55%] [32m[1mLinking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so[0m
+[19.814s] [ 55%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[19.864s] [ 57%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[20.916s] [ 59%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/num__type_support.cpp.o[0m
+[21.036s] [ 61%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/sphere__type_support.cpp.o[0m
+[21.157s] [ 63%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[21.274s] [ 65%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_c.so[0m
+[21.434s] [ 65%] Built target custom_interfaces__rosidl_typesupport_c
+[21.483s] [ 68%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[22.650s] [ 70%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/num__type_support.cpp.o[0m
+[24.104s] [ 72%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/sphere__type_support.cpp.o[0m
+[24.917s] [ 74%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/add_three_ints__type_support.cpp.o[0m
+[25.493s] [ 76%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[25.657s] [ 76%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[25.693s] [ 76%] Built target custom_interfaces
+[25.737s] [ 76%] Built target ament_cmake_python_copy_custom_interfaces
+[26.334s] running egg_info
+[26.335s] creating custom_interfaces.egg-info
+[26.337s] writing custom_interfaces.egg-info/PKG-INFO
+[26.339s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[26.340s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[26.342s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[26.348s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[26.349s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[26.400s] [ 76%] Built target ament_cmake_python_build_custom_interfaces_egg
+[26.441s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[27.553s] [ 78%] Built target custom_interfaces__py
+[27.587s] [ 80%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_num_s.c.o[0m
+[27.992s] [ 82%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_sphere_s.c.o[0m
+[28.339s] [ 85%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_add_three_ints_s.c.o[0m
+[28.842s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so[0m
+[29.117s] [ 87%] Built target custom_interfaces__rosidl_generator_py
+[29.215s] [ 89%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[29.580s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[29.741s] [ 91%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[29.831s] [ 93%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[30.234s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[30.391s] [ 95%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[30.492s] [ 97%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[30.859s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[31.020s] [100%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[31.077s] Invoked command in '/home/user/robotic-soln/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/robotic-soln/build/custom_interfaces -- -j1 -l1
+[31.804s] Invoking command in '/home/user/robotic-soln/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/robotic-soln/build/custom_interfaces
+[31.832s] -- Install configuration: ""
+[31.834s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces
+[31.835s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[31.835s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[31.835s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[31.838s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__functions.h
+[31.838s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__functions.c
+[31.838s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__struct.h
+[31.839s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__type_support.h
+[31.839s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/add_three_ints.h
+[31.839s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[31.839s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[31.840s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__functions.h
+[31.842s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__struct.h
+[31.842s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__functions.h
+[31.843s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__functions.c
+[31.843s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__type_support.h
+[31.843s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__type_support.h
+[31.844s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__functions.c
+[31.844s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__struct.h
+[31.846s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[31.847s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/num.h
+[31.847s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/sphere.h
+[31.847s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh
+[31.848s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv
+[31.848s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+[31.853s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so" to ""
+[31.853s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[31.853s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[31.853s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[31.853s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h
+[31.854s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[31.854s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[31.854s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h
+[31.854s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[31.855s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.855s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+[31.856s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[31.873s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[31.873s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[31.873s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[31.873s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__traits.hpp
+[31.874s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__builder.hpp
+[31.874s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__struct.hpp
+[31.874s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/add_three_ints.hpp
+[31.875s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[31.875s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[31.875s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__struct.hpp
+[31.875s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__traits.hpp
+[31.876s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__builder.hpp
+[31.876s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__traits.hpp
+[31.876s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__struct.hpp
+[31.876s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__builder.hpp
+[31.877s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/num.hpp
+[31.878s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/sphere.hpp
+[31.878s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[31.878s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[31.880s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[31.880s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[31.880s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps
+[31.881s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[31.882s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[31.883s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp
+[31.884s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[31.885s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps
+[31.885s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.886s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[31.887s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.888s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[31.889s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[31.889s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[31.893s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h
+[31.893s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__type_support.c
+[31.894s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[31.894s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[31.894s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_c.h
+[31.894s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__type_support.c
+[31.895s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__type_support.c
+[31.895s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h
+[31.895s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.896s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
+[31.903s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[31.903s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+[31.904s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so" to ""
+[31.905s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[31.905s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[31.905s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[31.905s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp
+[31.906s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/add_three_ints__type_support.cpp
+[31.906s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[31.906s] -- Up-to-date: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[31.907s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__type_support.cpp
+[31.907s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[31.907s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp
+[31.907s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/sphere__type_support.cpp
+[31.908s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
+[31.909s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[31.909s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
+[31.910s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so" to ""
+[31.910s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh
+[31.911s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv
+[31.912s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info
+[31.923s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[31.923s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[31.924s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[31.924s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[31.924s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces
+[31.925s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.925s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.925s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.925s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py
+[31.926s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv
+[31.926s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_add_three_ints_s.c
+[31.927s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py
+[31.927s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_add_three_ints.py
+[31.927s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[31.928s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c
+[31.928s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so
+[31.928s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[31.928s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg
+[31.929s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_sphere.py
+[31.929s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_sphere_s.c
+[31.929s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py
+[31.930s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_num_s.c
+[31.930s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_num.py
+[32.044s] Listing '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...
+[32.044s] Compiling '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py'...
+[32.044s] Listing '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...
+[32.044s] Compiling '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py'...
+[32.044s] Compiling '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_num.py'...
+[32.044s] Compiling '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_sphere.py'...
+[32.044s] Listing '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv'...
+[32.044s] Compiling '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py'...
+[32.045s] Compiling '/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_add_three_ints.py'...
+[32.054s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[32.071s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[32.072s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[32.072s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[32.073s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[32.074s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[32.074s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
+[32.075s] -- Set runtime path of "/home/user/robotic-soln/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so" to ""
+[32.076s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Num.idl
+[32.076s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Sphere.idl
+[32.076s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts.idl
+[32.077s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Num.msg
+[32.077s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/msg/Sphere.msg
+[32.077s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts.srv
+[32.093s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts_Request.msg
+[32.095s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts_Response.msg
+[32.096s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces
+[32.096s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces
+[32.097s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh
+[32.098s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv
+[32.098s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/path.sh
+[32.099s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/environment/path.dsv
+[32.099s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.bash
+[32.102s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.sh
+[32.106s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.zsh
+[32.113s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/local_setup.dsv
+[32.113s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/package.dsv
+[32.113s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces
+[32.114s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake
+[32.114s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+[32.115s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[32.115s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[32.123s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake
+[32.124s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[32.124s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[32.125s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[32.125s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[32.125s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake
+[32.126s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[32.128s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[32.128s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[32.128s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake
+[32.129s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[32.129s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake
+[32.130s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[32.130s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[32.130s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.131s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.131s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[32.133s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[32.134s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[32.144s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[32.145s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake
+[32.145s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake
+[32.145s] -- Installing: /home/user/robotic-soln/install/custom_interfaces/share/custom_interfaces/package.xml
+[32.153s] Invoked command in '/home/user/robotic-soln/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/robotic-soln/build/custom_interfaces

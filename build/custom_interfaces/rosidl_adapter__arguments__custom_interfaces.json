@@ -1,0 +1,8 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/user/robotic-soln/src/custom_interfaces:msg/Num.msg",
+    "/home/user/robotic-soln/src/custom_interfaces:msg/Sphere.msg",
+    "/home/user/robotic-soln/src/custom_interfaces:srv/AddThreeInts.srv"
+  ]
+}
