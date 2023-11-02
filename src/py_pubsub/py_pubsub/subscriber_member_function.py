@@ -17,9 +17,11 @@ from rclpy.node import Node
 
 from custom_interfaces.msg import Sensor3DOF
 
-
+# Minimal Client Async
+#   This node acts as a simple subscriber to the topic containing the
+#   3DOF sensor data. 
 class MinimalSubscriber(Node):
-
+    # Initilize node from superclass and add subscription
     def __init__(self):
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
@@ -29,15 +31,18 @@ class MinimalSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
 
+    # Read data from topic
     def listener_callback(self, msg):
         self.get_logger().info('Sensor %.0d: "%f, %f, %f"' % (msg.id, msg.data.x, msg.data.y, msg.data.z))
+        # Call some code that uses the sensor data here
 
 
 def main(args=None):
+    # Initilaize ROS node
     rclpy.init(args=args)
-
     minimal_subscriber = MinimalSubscriber()
 
+    # Handle callbacks
     rclpy.spin(minimal_subscriber)
 
     # Destroy the node explicitly
