@@ -27,12 +27,14 @@ class MinimalClientAsync(Node):
         self.req2 = Sensor3DOF.Request()
 
         self.i = 0 # ID to help with debugging
-        # self.data1 = self.data2 = None
+        self.data1 = self.data2 = None
 
         # Initialize publisher
         self.publisher_ = self.create_publisher(Sphere, 'topic', 10)
         timer_period = 0.5  # seconds
         timer = self.create_timer(timer_period, self.call_service, callback_group=cb_group)
+        timer_period2 = 0.002  # seconds
+        timer2 = self.create_timer(timer_period2, self.publish_data, callback_group=cb_group)
     
     def timer_callback(self):
         self.get_logger().info('%d' % self.i)
@@ -83,7 +85,7 @@ class MinimalClientAsync(Node):
                 'Receved and published data for server %d' % 1)
         finally:
             did_get_result = True
-            self.publish_data(result, 1)
+            # self.publish_data(result, 1)
         
         try:
             # req = Sensor3DOF.Request()
@@ -91,22 +93,39 @@ class MinimalClientAsync(Node):
             # req.b = 1
             future = self.cli2.call_async(self.req2)
             result = await future
-            self.data1 = result
+            self.data2 = result
             self.get_logger().info(
                 'Receved and published data for server %d' % 2)
         finally:
             did_get_result = True
-            self.publish_data(result, 2)
+            # self.publish_data(result, 2)
 
-    def publish_data(self, response, id):
-        self.get_logger().info('here')
-        msg = Sphere()
-        msg.radius = id
-        msg.center.x = response.x
-        msg.center.y = response.y
-        msg.center.z = response.z
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
+    def publish_data(self):
+        # self.get_logger().info('here')
+        # msg = Sphere()
+        # msg.radius = id
+        # msg.center.x = response.x
+        # msg.center.y = response.y
+        # msg.center.z = response.z
+        # self.publisher_.publish(msg)
+        # self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
+        if self.data1:
+            msg = Sphere()
+            msg.radius = 1
+            msg.center.x = self.data1.x
+            msg.center.y = self.data1.y
+            msg.center.z = self.data1.z
+            self.publisher_.publish(msg)
+            self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
+
+        if self.data2:
+            msg = Sphere()
+            msg.radius = 2
+            msg.center.x = self.data2.x
+            msg.center.y = self.data2.y
+            msg.center.z = self.data2.z
+            self.publisher_.publish(msg)
+            self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
 
 
 def main():
