@@ -44,30 +44,37 @@ class MinimalClientAsync(Node):
 
         # Initialize a slow timer to call the service with the sensor data
         timer_period = 0.01  # seconds
-        timer = self.create_timer(timer_period, self.call_service, callback_group=cb_group)
+        timer1 = self.create_timer(timer_period, self.call_service1, callback_group=cb_group)
+        timer2 = self.create_timer(timer_period, self.call_service2, callback_group=cb_group)
 
         # Initialize fast timers to publish the sensor data to a topic
         timer_period2 = 0.002  # seconds
-        timer2 = self.create_timer(timer_period2, self.publish_data1, callback_group=cb_group)
-        timer3 = self.create_timer(timer_period2, self.publish_data2, callback_group=cb_group)
+        timer3 = self.create_timer(timer_period2, self.publish_data1, callback_group=cb_group)
+        timer4 = self.create_timer(timer_period2, self.publish_data2, callback_group=cb_group)
     
-    # Request data from both sensors
-    async def call_service(self):
+    # Request data from sensor 1
+    async def call_service1(self):
         try:
+            # Request data
             future = self.cli1.call_async(self.req1)
             result = await future
         finally:
+            # Store result if successful
             self.data1 = result
             self.get_logger().info(
-                'Receved and published data for server %d' % 1)
-        
+                'Receved data from server %d' % 1)
+    
+    # Request data from sensor 2
+    async def call_service2(self):
         try:
+            # Request data
             future = self.cli2.call_async(self.req2)
             result = await future
         finally:
+            # Store result if successful
             self.data2 = result
             self.get_logger().info(
-                'Receved and published data for server %d' % 2)
+                'Receved data from server %d' % 2)
 
     # Publish data from sensor 1 to topic if data is available
     def publish_data1(self):
