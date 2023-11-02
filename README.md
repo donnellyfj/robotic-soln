@@ -1,5 +1,5 @@
 # Robotic_HW
-This project is a simple ROS2 network that reads data from simulated 'sensors', queries the data utilizing a custom service, and publishes the data to a topic at 500Hz.
+This project is a simple ROS2 network that reads data from simulated 'sensors', queries the data utilizing a custom service, and publishes the data to a topic at 500Hz. The solution was pieced together by referencing the offical ROS2 docs and examples, as linked in the 'Install ROS2' section below.
 ## To Run
 ### Install ROS2
 Install instructions (Ubuntu): [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
