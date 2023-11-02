@@ -15,7 +15,7 @@
 import rclpy
 from rclpy.node import Node
 
-from custom_interfaces.msg import Sphere
+from custom_interfaces.msg import Sensor3DOF
 
 
 class MinimalSubscriber(Node):
@@ -23,14 +23,14 @@ class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
-            Sphere,
+            Sensor3DOF,
             'topic',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('Sensor %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
+        self.get_logger().info('Sensor %.0d: "%f, %f, %f"' % (msg.id, msg.data.x, msg.data.y, msg.data.z))
 
 
 def main(args=None):

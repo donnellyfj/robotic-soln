@@ -1,7 +1,7 @@
 import sys
 
 from custom_interfaces.srv import Sensor3DOF
-from custom_interfaces.msg import Sphere
+from custom_interfaces.msg import Sensor3DOF as SensorMsg
 import rclpy
 from rclpy.node import Node
 from rclpy.callback_groups import ReentrantCallbackGroup
@@ -28,7 +28,7 @@ class MinimalClientAsync(Node):
         self.data1 = self.data2 = None
 
         # Initialize publisher
-        self.publisher_ = self.create_publisher(Sphere, 'topic', 10)
+        self.publisher_ = self.create_publisher(SensorMsg, 'topic', 10)
 
         # Initialize a slow timer to call the service with the sensor data
         timer_period = 0.5  # seconds
@@ -57,22 +57,22 @@ class MinimalClientAsync(Node):
 
     def publish_data(self):
         if self.data1:
-            msg = Sphere()
-            msg.radius = 1
-            msg.center.x = self.data1.x
-            msg.center.y = self.data1.y
-            msg.center.z = self.data1.z
+            msg = SensorMsg()
+            msg.id = 1
+            msg.data.x = self.data1.x
+            msg.data.y = self.data1.y
+            msg.data.z = self.data1.z
             self.publisher_.publish(msg)
-            self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
+            self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.id, msg.data.x, msg.data.y, msg.data.z))
 
         if self.data2:
-            msg = Sphere()
-            msg.radius = 2
-            msg.center.x = self.data2.x
-            msg.center.y = self.data2.y
-            msg.center.z = self.data2.z
+            msg = SensorMsg()
+            msg.id = 2
+            msg.data.x = self.data2.x
+            msg.data.y = self.data2.y
+            msg.data.z = self.data2.z
             self.publisher_.publish(msg)
-            self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
+            self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.id, msg.data.x, msg.data.y, msg.data.z))
 
 
 def main():
