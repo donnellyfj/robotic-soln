@@ -1,7 +1,7 @@
 import sys
 
 from custom_interfaces.srv import Sensor3DOF
-from geometry_msgs.msg import Point
+from custom_interfaces.msg import Sphere
 import rclpy
 from rclpy.node import Node
 from rclpy.callback_groups import ReentrantCallbackGroup
@@ -29,14 +29,14 @@ class MinimalClientAsync(Node):
         # self.data1 = self.data2 = None
 
         # Initialize publisher
-        self.publisher_ = self.create_publisher(Point, 'topic', 10)
+        self.publisher_ = self.create_publisher(Sphere, 'topic', 10)
         timer_period = 0.5  # seconds
         # timer = self.create_timer(timer_period, self.timer_callback, callback_group=cb_group)
     
     def timer_callback(self):
         self.get_logger().info('%d' % self.i)
-        self.publish_data(self.data1)
-        self.publish_data(self.data2)
+        self.publish_data(self.data1, 1)
+        self.publish_data(self.data2, 2)
         self.i += 1
 
     def send_request(self, id):
@@ -62,14 +62,15 @@ class MinimalClientAsync(Node):
             return self.data2
         # return self.future.result()
 
-    def publish_data(self, response):
+    def publish_data(self, response, id):
         self.get_logger().info('here')
-        msg = Point()
-        msg.x = response.x
-        msg.y = response.y
-        msg.z = response.z
+        msg = Sphere()
+        msg.radius = id
+        msg.center.x = response.x
+        msg.center.y = response.y
+        msg.center.z = response.z
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%f, %f, %f"' % (msg.x, msg.y, msg.z))
+        self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.radius, msg.center.x, msg.center.y, msg.center.z))
 
 
 def main():

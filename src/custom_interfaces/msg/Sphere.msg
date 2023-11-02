@@ -1,2 +1,2 @@
 geometry_msgs/Point center
-float64 radius
+int64 radius
