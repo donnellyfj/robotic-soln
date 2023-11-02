@@ -40,12 +40,12 @@ class MinimalClientAsync(Node):
         # Initialize publisher
         self.publisher_ = self.create_publisher(SensorMsg, 'topic', 10)
 
-        # Initialize a slow timer to call the service with the sensor data
+        # Initialize a slow timer to call the service with the sensor data (100Hz)
         timer_period = 0.01  # seconds
         timer1 = self.create_timer(timer_period, self.call_service1, callback_group=cb_group)
         timer2 = self.create_timer(timer_period, self.call_service2, callback_group=cb_group)
 
-        # Initialize fast timers to publish the sensor data to a topic
+        # Initialize fast timers to publish the sensor data to a topic (500Hz)
         timer_period2 = 0.002  # seconds
         timer3 = self.create_timer(timer_period2, self.publish_data1, callback_group=cb_group)
         timer4 = self.create_timer(timer_period2, self.publish_data2, callback_group=cb_group)
