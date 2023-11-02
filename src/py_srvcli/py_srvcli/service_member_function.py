@@ -42,7 +42,7 @@ class MinimalService(Node):
         #       steady stream, we can simply rework the solution to return the data in array
         #       form, allowing us to capture all samples retroactively. The number of samples
         #       that should be used in this case would be:
-        #       numSalples = (sensorRate(Hz)) * (delay(s) + MAX(serviceRate(s), publishRate(s)))
+        #       numSamples = (sensorRate(Hz)) * (delay(s) + MAX(serviceRate(s), publishRate(s)))
         #       This value is the amount of data points a sensor produces in between calls, as
         #       each call takes delay + MAX(serviceRate, publishRate) seconds, and each sensor
         #       producess sensorRate values per second.
