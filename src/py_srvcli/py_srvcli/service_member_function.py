@@ -76,7 +76,8 @@ def main():
 
     # Clean up the connection
     print('closing socket')
-    sock.close()
+    sock1.close()
+    sock2.close()
 
 
 if __name__ == '__main__':
