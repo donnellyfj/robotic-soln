@@ -1,5 +1,3 @@
-import sys
-
 from custom_interfaces.srv import Sensor3DOF
 from custom_interfaces.msg import Sensor3DOF as SensorMsg
 import rclpy
