@@ -6,11 +6,21 @@ import rclpy
 from rclpy.node import Node
 from rclpy.callback_groups import ReentrantCallbackGroup
 
-
+# Minimal Client Async
+#   This node acts as both a service client and a topic publisher.
+#   On a timer, the client will make a request to the service for
+#   sensor data. A custom interface is use to handle passing 3 DOF
+#   data from the sensors. Upon receiving a response, the data is
+#   published to a topic. The most recent data retrieved by the client
+#   is stored persistently, allowing the data to be published at a
+#   faster rate to the topic than it is received from the service.
 class MinimalClientAsync(Node):
 
     def __init__(self):
+        # Initialize node from Node superclass
         super().__init__('minimal_client_async')
+
+        # Allow for parallel callback execution to prevent deadlocks
         cb_group = ReentrantCallbackGroup()
 
         # Initialize service clients
@@ -25,6 +35,8 @@ class MinimalClientAsync(Node):
         self.req2 = Sensor3DOF.Request()
 
         self.i = 0 # ID to help with debugging
+
+        # Store most recent value for each sensor
         self.data1 = self.data2 = None
 
         # Initialize publisher
@@ -39,6 +51,7 @@ class MinimalClientAsync(Node):
         timer2 = self.create_timer(timer_period2, self.publish_data1, callback_group=cb_group)
         timer3 = self.create_timer(timer_period2, self.publish_data2, callback_group=cb_group)
     
+    # Request data from both sensors
     async def call_service(self):
         try:
             future = self.cli1.call_async(self.req1)
@@ -56,6 +69,7 @@ class MinimalClientAsync(Node):
             self.get_logger().info(
                 'Receved and published data for server %d' % 2)
 
+    # Publish data from sensor 1 to topic if data is available
     def publish_data1(self):
         if self.data1:
             msg = SensorMsg()
@@ -66,6 +80,7 @@ class MinimalClientAsync(Node):
             self.publisher_.publish(msg)
             self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.id, msg.data.x, msg.data.y, msg.data.z))
 
+    # Publish data from sensor 2 to topic if data is available
     def publish_data2(self):
         if self.data2:
             msg = SensorMsg()
@@ -78,12 +93,14 @@ class MinimalClientAsync(Node):
 
 
 def main():
+    # Initilaize ROS node
     rclpy.init()
-
     minimal_client = MinimalClientAsync()
     
+    # Handle callbacks
     rclpy.spin(minimal_client)
 
+    # Clean up on shutdown
     minimal_client.destroy_node()
     rclpy.shutdown()
 
