@@ -31,12 +31,13 @@ class MinimalClientAsync(Node):
         self.publisher_ = self.create_publisher(SensorMsg, 'topic', 10)
 
         # Initialize a slow timer to call the service with the sensor data
-        timer_period = 0.5  # seconds
+        timer_period = 0.01  # seconds
         timer = self.create_timer(timer_period, self.call_service, callback_group=cb_group)
 
-        # Initialize a fast timer to publish the sensor data to a topic
+        # Initialize fast timers to publish the sensor data to a topic
         timer_period2 = 0.002  # seconds
-        timer2 = self.create_timer(timer_period2, self.publish_data, callback_group=cb_group)
+        timer2 = self.create_timer(timer_period2, self.publish_data1, callback_group=cb_group)
+        timer3 = self.create_timer(timer_period2, self.publish_data2, callback_group=cb_group)
     
     async def call_service(self):
         try:
@@ -55,7 +56,7 @@ class MinimalClientAsync(Node):
             self.get_logger().info(
                 'Receved and published data for server %d' % 2)
 
-    def publish_data(self):
+    def publish_data1(self):
         if self.data1:
             msg = SensorMsg()
             msg.id = 1
@@ -65,6 +66,7 @@ class MinimalClientAsync(Node):
             self.publisher_.publish(msg)
             self.get_logger().info('Publishing %.0d: "%f, %f, %f"' % (msg.id, msg.data.x, msg.data.y, msg.data.z))
 
+    def publish_data2(self):
         if self.data2:
             msg = SensorMsg()
             msg.id = 2
