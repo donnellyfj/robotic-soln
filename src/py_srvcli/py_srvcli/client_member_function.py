@@ -5,7 +5,6 @@ from custom_interfaces.msg import Sphere
 import rclpy
 from rclpy.node import Node
 from rclpy.callback_groups import ReentrantCallbackGroup
-from rclpy.executors import MultiThreadedExecutor
 
 
 class MinimalClientAsync(Node):
