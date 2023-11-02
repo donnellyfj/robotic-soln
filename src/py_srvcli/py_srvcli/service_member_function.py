@@ -14,7 +14,7 @@ server_address1 = ('127.0.0.3', 10000)
 print('connecting to {} port {}'.format(*server_address1))
 sock1.connect(server_address1)
 
-server_address2 = ('127.0.0.1', 10001)
+server_address2 = ('127.0.0.1', 10000)
 print('connecting to {} port {}'.format(*server_address2))
 sock2.connect(server_address2)
 
@@ -27,11 +27,6 @@ class MinimalService(Node):
         self.number_of_samples = 1
 
     def get_sensor_data1_callback(self, request, response):
-        # response.sum = request.a + request.b + request.c
-        # i = float(request.i)
-        # response.x = i
-        # response.y = i + 1
-        # response.z = i + 2
         self.get_logger().info('Incoming request: %d' % request.i)
         # Request 10 samples from the sensor
         print("Requesting samples...")
@@ -51,11 +46,6 @@ class MinimalService(Node):
         return response
     
     def get_sensor_data2_callback(self, request, response):
-        # response.sum = request.a + request.b + request.c
-        # i = float(request.i)
-        # response.x = i + 3
-        # response.y = i + 4
-        # response.z = i + 5
         self.get_logger().info('Incoming request: %d' % request.i)
         # Request 10 samples from the sensor
         print("Requesting samples...")
